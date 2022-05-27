@@ -1,0 +1,216 @@
+/* -------------------------------------------------------------
+GENERAL 
+------------------------------------------------------------- */
+body {
+    margin: 0;
+}
+/* -------------------------------------------------------------
+HEADER 
+------------------------------------------------------------- */
+header {
+    width: 100%;
+    max-width: 1280px;
+    height: 63px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header__img {
+    height: 30px;
+}
+
+.logo-header__img img {
+    height: 30px;
+}
+
+.localisation-header__items{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.localisation-header__items p {
+    font-size: 14px;
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-location-dot {
+    color: #353535;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+/* -------------------------------------------------------------
+HEADING SECTION 
+------------------------------------------------------------- */
+.heading-section {
+    background-color: #F6F6F6;
+}
+.heading-section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 43px;
+}
+
+.heading-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 21px;
+}
+.call-to-action {
+    padding: 30px 0 57px 0;
+}
+
+button {
+    margin: auto;
+    width: 217px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: unset;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #bbb;
+}
+
+button span {
+    align-self: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------------------
+FUNCTION SECTION 
+------------------------------------------------------------- */
+.function-section {
+    width: 100%;
+    max-width: 1280px;
+    padding-top: 52px;
+    margin: auto;
+}
+
+.function-section h2 {
+    margin: 0 0 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.function-group {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.function-item {
+    width: 100%;
+    max-width: 320px;
+    height: 75px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.chip {
+    background-color: #9356DC;
+    font-size: 12px;
+    font-family: 'Roboto', 'sans-serif';
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 50%;
+    position: relative;
+    right: 13px;
+    font-weight: 500;
+}
+
+.function-item__icon {
+    font-size: 20px;
+    color: #7E7E7E;
+    padding: 0 20px 0 10px;
+}
+
+.function-item--text {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    align-self: center;
+}
+
+/* -------------------------------------------------------------
+MEDIA QUERIES 
+------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    /* ---------- HEADER ---------- */
+    header {
+        width: 100%;
+        max-width: 768px;
+        height: unset;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-header {
+        width: 100%;
+        box-shadow: 0px 5px 10px #ccc;
+        z-index: 1;
+    }
+
+    .logo-header__img {
+        display: flex;
+        align-items: center;
+        height: 63px;
+        justify-content: center;
+    }
+
+    .localisation-header {
+        width: 100%;
+        height: 50px;
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ---------- HEADING SECTION ---------- */
+
+    /* ---------- FUNCTION SECTION ---------- */
+    .function-section {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .function-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .function-item {
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+
+
