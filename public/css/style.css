@@ -3,6 +3,7 @@ GENERAL
 ------------------------------------------------------------- */
 body {
     margin: 0;
+    font-family: 'Roboto', 'sans-serif';
 }
 /* -------------------------------------------------------------
 HEADER 
@@ -34,7 +35,6 @@ header {
 .localisation-header__items p {
     font-size: 14px;
     color: #353535;
-    font-family: 'Roboto', sans-serif;
 }
 
 .fa-location-dot {
@@ -47,7 +47,6 @@ header {
 TITLES
 ------------------------------------------------------------- */
 h1 {
-    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 700;
     color: #000;
@@ -59,14 +58,12 @@ h1 {
 
 h2 {
     margin: 0 0 0 20px;
-    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 500;
     color: #000;
 }
 
 h3 {
-    font-family: 'Roboto', 'sans-serif';
     font-size: 18px;
     font-weight: 500;
     color: #000;
@@ -81,7 +78,6 @@ HEADING SECTION
 }
 
 .heading-section p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #353535;
     font-weight: 100;
@@ -110,7 +106,6 @@ button {
 button span {
     align-self: center;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 400;
 }
@@ -147,7 +142,6 @@ FUNCTION SECTION
 .chip {
     background-color: #9356DC;
     font-size: 12px;
-    font-family: 'Roboto', 'sans-serif';
     color: #fff;
     padding: 6px 10px;
     border-radius: 50%;
@@ -163,7 +157,6 @@ FUNCTION SECTION
 }
 
 .function-item--text {
-    font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
     font-weight: 500;
     color: #000;
@@ -224,7 +217,6 @@ RESTAU SECTION
     line-height: 2px;
     font-weight: 500;
     color: #008766;
-    font-family: 'Roboto';
     font-size: 14px;
     border-radius: 3px;
 }
@@ -238,10 +230,6 @@ RESTAU SECTION
 
 .restau-item__img img {
     width: 100%;
-    /* position: absolute;
-    top: 36%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     object-fit: cover;
     height: 174px;
 }
@@ -251,8 +239,11 @@ RESTAU SECTION
     position: relative;
 }
 
+.restau-infos h3 span {
+    text-transform: uppercase;
+}
+
 .restau-infos__text {
-    font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
     font-weight: 100;
     color: #000;
@@ -265,19 +256,15 @@ RESTAU SECTION
     top: 35%;
 }
 
-.fa-heart {
+.like .fa-heart {
     font-size: 20px;
     -webkit-text-stroke: #000;
     color: #fff;
     -webkit-text-stroke-width: 1px;
+    cursor: pointer;
 }
 
-.fa-heart:hover {
-    /* font-size: 20px;
-    -webkit-text-stroke: red;
-    color: red;
-    -webkit-text-stroke-width: 1px;
-    cursor: pointer; */
+.like .fa-heart:hover {
     background-image: linear-gradient(180deg, #9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
@@ -324,7 +311,6 @@ footer {
 
 .footer-link ul li {
     color: #fff;
-    font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
     font-weight: 300;
     padding: 5px 10px;
