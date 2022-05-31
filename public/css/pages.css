@@ -93,13 +93,10 @@ MENU SECTION
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 .menu-group__large {
     padding: 0px 20px;
-    /* width: 30%; */
 }
 
 .menu-group__large h5 {
