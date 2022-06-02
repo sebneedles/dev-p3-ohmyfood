@@ -438,6 +438,20 @@ MEDIA QUERIES 768px
         flex-direction: column;
     }
 
+    .menu-item__title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 270px;
+    }
+
+    .menu-info .text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 260px;
+    }
+
     /* ---------- FOOTER ---------- */
     .footer-content {
         width: 80%;
