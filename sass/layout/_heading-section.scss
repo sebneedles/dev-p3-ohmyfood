@@ -50,5 +50,6 @@ button {
         transition: opacity 500ms;
         border-radius: 30px;
         border: unset;
+        @include shadow-hover-btn;
     }
 }

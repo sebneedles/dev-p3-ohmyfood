@@ -29,43 +29,54 @@
     border-radius: 20px;
     position: relative;
     height: 35%;
+    overflow: hidden;
     a {
         text-decoration: none;
-        color: red;
-    }
-}
-
-.sticker {
-    background-color: $tertiary-clr;
-    width: 80px;
-    height: 30px;
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    z-index: 1;
-    text-align: center;
-    line-height: 30px;
-    font-weight: 500;
-    color: #008766; /* a refaire sous forme de condition */
-    font-size: 14px;
-    border-radius: 3px;
-}
-
-/* -------------------------------------------
-item image
--------------------------------------------- */
-.restau-item__img {
-    height: 174px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px 20px 0 0;
-    img {
-        width: 100%;
-        object-fit: cover;
-        height: 174px;
-        &:hover {
+        &:hover > .restau-item__img img {
             animation: imgscale .6s forwards;
-            transition: all 300ms;
+            color: $primary-clr;
+        }
+        .sticker {
+            background-color: $tertiary-clr;
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            z-index: 1;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+            color: #008766;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+        .restau-item__img {
+            height: 174px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 174px;
+                &:hover {
+                    
+                }
+            }
+        }
+        .restau-infos {
+            padding: 16px 14px;
+            position: relative;
+            h3 span {
+                text-transform: uppercase;
+            }
+            &__text {
+                font-size: 16px;
+                font-weight: 100;
+                color: $black-clr;
+                margin-top: 3px;
+            }
         }
     }
 }
@@ -74,31 +85,15 @@ item image
     0% {
         opacity: 1;
         transform: scale(1);
-        transition: all 300ms;
     }
     100% {
-        opacity: .3;
+        opacity: .5;
         transform: scale(1.2);
-        transition: all 300ms;
     }
 }
 
-/* -------------------------------------------
-item infos text
--------------------------------------------- */
-.restau-infos {
-    padding: 16px 14px;
-    position: relative;
-    h3 span {
-        text-transform: uppercase;
-    }
-    &__text {
-        font-size: 16px;
-        font-weight: 100;
-        color: $black-clr;
-        margin-top: 3px;
-    }
-}
+
+
 
 
 /* -------------------------------------------
@@ -108,15 +103,16 @@ like heart
     position: absolute;
     right: 12px;
     top: 35%;
+    transition: .3s;
     .fa-heart {
         font-size: 20px;
         -webkit-text-stroke: $black-clr;
         color: $white-clr;
         -webkit-text-stroke-width: 1px;
-        transition: 300ms;
         cursor: pointer;
         &:hover {
             animation: heart .5s ease forwards;
+            transition: .3s;
         }
     }
 }
