@@ -129,6 +129,7 @@ MENU ITEM
             display: flex;
             flex-flow: column;
             justify-content: space-between;
+            overflow: hidden;
             .title-description {
                 font-size: 18px;
                 font-weight: 400;
